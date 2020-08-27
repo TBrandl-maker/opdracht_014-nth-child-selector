@@ -1,0 +1,47 @@
+li {
+    text-align: center;
+    line-height: 2;
+    background: slategrey;
+    list-style:none;
+}
+
+div {
+    width: 12em;
+    float: left;
+    margin-right: 2em;
+}
+
+hr {
+    clear: both;
+    padding-top: 1em;
+    border: 0;
+    border-bottom: 1px solid grey;
+}
+
+.one ul li:nth-child(1) {
+    background-color: #B0C4DE;
+}
+ 
+.one ol li:nth-child(1) {
+    background-color:#B0C4DE;
+}
+
+.two ol li:nth-child(3) {
+    background-color:#B0C4DE;
+}
+
+.three > *:nth-child(odd) li:nth-child(-n+3) {
+    background-color: #B0C4DE;
+}
+
+/* 
+ Onderstaande pseudo-element mist een : 
+ Volgens mij hoort dit div::before te zijn volgens de nieuwste CSS3 regels.
+ Ik begrijp ook niet goed wat het hoort te doen. 
+*/
+
+div:before {
+    font-family: monospace;
+    white-space: nowrap;
+    font-size: 12px; 
+}
